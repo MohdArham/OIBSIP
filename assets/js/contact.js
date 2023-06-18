@@ -1,42 +1,60 @@
-var typed = new Typed("#typed", {
-                        strings: ['Programmer', 'Engineer', 'Gamer ', 'Designer'],
-                        typeSpeed: 0.5,
-                        smartBackspace: true,
-                        backSpeed: 0.1,
-                        loop: true,
-                        showCursor: false,
-                    });
+document.addEventListener("DOMContentLoaded", function() {
+    const contactForm = document.querySelector("#contact-form");
 
-new WOW().init();
+    contactForm.addEventListener("submit", function(event) {
+      event.preventDefault();
 
-                    const btnScrollToTop = document.querySelector("#btnScrollToTop");
-                    btnScrollToTop.addEventListener("click", function() {
-                        window.scrollTo({
-                            top: 0,
-                            left: 0,
-                            behavior: "smooth"
-                        });
-                    });
+      // Get form input values
+      const firstName = document.querySelector("#fname").value;
+      const lastName = document.querySelector("#lname").value;
+      const country = document.querySelector("#country").value;
+      const subject = document.querySelector("#subject").value;
 
-                        const contactBtn = document.querySelector("#contact-btn");
-                        const email = document.querySelector("#email");
-                        const name = document.querySelector("#name");
-                        const number = document.querySelector("#number");
-                        const form = document.querySelector("#contact-form");
+      // Validate form input
+      if (firstName === "" || lastName === "" || country === "" || subject === "") {
+        alert("Please fill all the details!!");
+        return;
+      }
 
-                        contactBtn.addEventListener("click", (e) => {
-                            e.preventDefault();
-                            if(email.value === "" || name.value === "" || number.value === ""){
-                                alert("Please fill all the details!!");
-                            }
-                            else if(form.checkValidity()){
-                                alert("Your details are successfully submitted!!");
-                                email.value = "";
-                                name.value = "";
-                                number.value = "";
-                            }
-                            else{
-                                alert("Please see that your mail and phone number are correct!!");
-                            }
-                        });
-          new WOW().init();
+      // Perform form submission or AJAX request
+      // Here you can add your code to send the form data to the server
+
+      // Clear form input values
+      document.querySelector("#fname").value = "";
+      document.querySelector("#lname").value = "";
+      document.querySelector("#country").value = "";
+      document.querySelector("#subject").value = "";
+
+      alert("Your details have been successfully submitted!!");
+    });
+  });
+//Contact.html js code
+
+          const contactForm = document.querySelector("#contact-form");
+
+contactForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  // Get form input values
+  const firstName = document.querySelector("#fname").value;
+  const lastName = document.querySelector("#lname").value;
+  const country = document.querySelector("#country").value;
+  const subject = document.querySelector("#subject").value;
+
+  // Validate form input
+  if (firstName === "" || lastName === "" || country === "" || subject === "") {
+    alert("Please fill all the details!!");
+    return;
+  }
+
+  // Perform form submission or AJAX request
+  // Here you can add your code to send the form data to the server
+
+  // Clear form input values
+  document.querySelector("#fname").value = "";
+  document.querySelector("#lname").value = "";
+  document.querySelector("#country").value = "";
+  document.querySelector("#subject").value = "";
+
+  alert("Your details have been successfully submitted!!");
+});

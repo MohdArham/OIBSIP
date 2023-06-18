@@ -679,3 +679,76 @@ footer .person1 {
   .colorful-icon i.devicon-java-plain-wordmark {
     color: #007396; /* Change this color to your desired color for Java */
   }
+
+
+
+
+  /* Box 3 Css Not working properly */
+  .about .card-wrapper .box3 ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align items to the center */
+    flex-wrap: wrap; /* Allow items to wrap to a new line */
+  }
+  
+  .about .card-wrapper .box3 ul li {
+    width: 33%; /* Adjust the width as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .about .card-wrapper .box3 ul li span {
+    font-weight: bold;
+  }
+
+  
+
+
+
+
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .social-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .social-links ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-links ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  
+  .footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .ContactColour a {
+    color: #f53f2b;
+    text-decoration: none;
+  }
+  
+  .ContactColour a:hover {
+    color: #f53f2b;
+  }
+  
