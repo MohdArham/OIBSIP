@@ -20,13 +20,13 @@ This is an OpenSource Portfolio Template Based on Neomorphic Theme Made with pur
 
 ## Screenshots
 
-<img src="assets/img/preview-1.PNG"
+<img src="assets\img\Mohammad Arham _ Web designer - 1.png"
      alt="template preview"
      style="float: left; margin-right: 10px;" />
-<img src="assets/img/preview-2.PNG"
+<img src="assets\img\Mohammad Arham _ Web designer - 2.png"
      alt="template preview"
      style="float: left; margin-right: 10px;" />
-<img src="assets/img/preview-3.PNG"
+<img src="assets\img\Mohammad Arham _ Web designer - 2.png"
       alt="template preview"
      style="float: left; margin-right: 10px;" />
 
