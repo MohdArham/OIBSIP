@@ -15,10 +15,6 @@ document.addEventListener("DOMContentLoaded", function() {
         alert("Please fill all the details!!");
         return;
       }
-
-      // Perform form submission or AJAX request
-      // Here you can add your code to send the form data to the server
-
       // Clear form input values
       document.querySelector("#fname").value = "";
       document.querySelector("#lname").value = "";
@@ -29,7 +25,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 //Contact.html js code
-
           const contactForm = document.querySelector("#contact-form");
 
 contactForm.addEventListener("submit", function (event) {
@@ -46,10 +41,6 @@ contactForm.addEventListener("submit", function (event) {
     alert("Please fill all the details!!");
     return;
   }
-
-  // Perform form submission or AJAX request
-  // Here you can add your code to send the form data to the server
-
   // Clear form input values
   document.querySelector("#fname").value = "";
   document.querySelector("#lname").value = "";

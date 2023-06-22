@@ -1,4 +1,3 @@
-
 var typed = new Typed("#typed", {
     strings: ['Programmer', 'Engineer', 'Gamer ', 'Designer'],
     typeSpeed: 0.5,
@@ -7,10 +6,7 @@ var typed = new Typed("#typed", {
     loop: true,
     showCursor: false,
 };
-
 new WOW().init();
-
-
 const btnScrollToTop = document.querySelector("#btnScrollToTop");
                                     btnScrollToTop.addEventListener("click", function () {
                                         window.scrollTo({
@@ -40,7 +36,6 @@ const btnScrollToTop = document.querySelector("#btnScrollToTop");
                                             });
                                         });
 
-
 var typed = new Typed("#typed", {
     strings: ['Programmer', 'Engineer', 'Gamer ', 'Designer'],
     typeSpeed: 0.5,
@@ -50,7 +45,6 @@ var typed = new Typed("#typed", {
     showCursor: false,
 }); 
 
-
 const btnScrollToTop = document.querySelector("#btnScrollToTop");
 btnScrollToTop.addEventListener("click", function (){
     window.scrollTo({
@@ -59,7 +53,6 @@ btnScrollToTop.addEventListener("click", function (){
     behavior: "smooth"
     });
 });
-
 
 new WOW().init();
 const forScroll = document.getElementById('btnScrollToTop')
@@ -71,7 +64,6 @@ forScroll.addEventListener('click', () => {
 					behavior : "smooth"
     })
 })
-
 
             const contactBtn = document.querySelector("#contact-btn");
             const email = document.querySelector("#email");
@@ -108,12 +100,10 @@ forScroll.addEventListener('click', () => {
                 {
                     alert("Name should be between 3 and 40 characters!")
                 }
-
                 else if (!validatePhone())
                 {
                     alert("Phone number is invalid!")
                 }
-
                 else
                 {
                     alert("Your details are successfully submitted!!");
