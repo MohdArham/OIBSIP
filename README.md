@@ -26,7 +26,7 @@ This is an OpenSource Portfolio Template Based on Neomorphic Theme Made with pur
 <img src="assets\img\Mohammad Arham _ Web designer - 2.png"
      alt="template preview"
      style="float: left; margin-right: 10px;" />
-<img src="assets\img\Mohammad Arham _ Web designer - 2.png"
+<img src="assets\img\Mohammad Arham _ Web designer - 3.png"
       alt="template preview"
      style="float: left; margin-right: 10px;" />
 
