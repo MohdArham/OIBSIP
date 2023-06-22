@@ -33,7 +33,7 @@ This is an OpenSource Portfolio Template Based on Neomorphic Theme Made with pur
   
 ## Demo
 
- https://mohdarham.github.io/OIBSIP/ or shorturl.at/ovPU0
+ https://mohdarham.github.io/OIBSIP/ or https://shorturl.at/ovPU0
 
   
 ## Features
