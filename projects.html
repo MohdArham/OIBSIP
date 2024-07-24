@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#f53f2b">
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="description" content="Portfolio Projects Page">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Projects, Developer">
+    <meta name="author" content="Mohammad Arham">
+    <link rel="shortcut icon" href="assets/img/arham.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+    <script src="https://kit.fontawesome.com/4019246ab4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Mohammad Arham | Projects</title>
+    <style>
+        .projects {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        .project-card {
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .project-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .project-image {
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        .project-title {
+            font-size: 28px;
+            color: #333;
+        }
+        .project-description {
+            font-size: 16px;
+            color: #666;
+        }
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #f53f2b;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="projects">
+        <h1 style="font-size: 36px; color: #f53f2b; text-align: center; margin-bottom: 20px;">My Projects</h1>
+
+        <!-- Project 1 -->
+        <div class="project-card">
+            <h2 class="project-title">Quadtree Visualizer</h2>
+            <p class="project-description">Developed a versatile quadtree library for efficient data visualization. Features include interactive visualization and collision detection, using C/C++, CMake, and React. Applications include GIS, game development, and data analysis.</p>
+            <img src="assets/img/quadtree-visualizer.jpg" alt="Quadtree Visualizer" class="project-image">
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <h2 class="project-title">Student Information Chatbot System</h2>
+            <p class="project-description">Created a chatbot for answering student and college-related queries, improving response times and reducing administrative workload. Utilized AI, natural language processing, and web technologies for implementation.</p>
+            <img src="assets/img/chatbot-system.jpg" alt="Student Information Chatbot System" class="project-image">
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <h2 class="project-title">Student Helpdesk System (Web-Based)</h2>
+            <p class="project-description">Developed a system enabling students to request academic, technical, and administrative support from their educational institution.</p>
+            <img src="assets/img/helpdesk-system.jpg" alt="Student Helpdesk System" class="project-image">
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+            <h2 class="project-title">Number Plate Recognition System using MATLAB</h2>
+            <p class="project-description">Created a system utilizing image processing techniques and pattern recognition algorithms to detect and extract license plate information from images.</p>
+            <img src="assets/img/number-plate-recognition.jpg" alt="Number Plate Recognition System" class="project-image">
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card">
+            <h2 class="project-title">Portfolio Website</h2>
+            <p class="project-description">Designed and developed a responsive portfolio website with rich animations, full-screen mode, and a modern aesthetic UI.</p>
+            <img src="assets/img/portfolio-website.jpg" alt="Portfolio Website" class="project-image">
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card">
+            <h2 class="project-title">E-commerce Website</h2>
+            <p class="project-description">Built an e-commerce website allowing users to browse products, add items to the cart, and complete the purchase process.</p>
+            <img src="assets/img/ecommerce-website.jpg" alt="E-commerce Website" class="project-image">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <section>
+            <div class="credit">&copy; copyright @ 2024 Mohammad Arham | All Rights Reserved!</div>
+        </section>
+    </footer>
+
+    <!-- TypedJs -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+        var typed = new Typed("#typed", {
+            strings: ['Programmer', 'Engineer', 'Gamer ', 'Designer'],
+            typeSpeed: 50,
+            smartBackspace: true,
+            backSpeed: 35,
+            loop: true,
+            showCursor: false,
+        });
+    </script>
+
+    <!-- Wow js is for animation on scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>

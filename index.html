@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="theme-color" content="#f53f2b">
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="description" content="Portfolio To your site">
-    <meta name="keywords" content="HTML, CSS, JavaScript, wavify.js, Developer">
+    <meta name="description" content="Portfolio of Mohammad Arham">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Developer">
     <meta name="author" content="Mohammad Arham">
     <link rel="shortcut icon" href="assets/img/arham.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,12 +13,193 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
     <script src="https://kit.fontawesome.com/4019246ab4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <title>Mohammad Arham | Web designer</title>
+    <title>Mohammad Arham | Web Designer</title>
+    <style>
+        .projects {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        .project-card {
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .project-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .project-image {
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        .project-title {
+            font-size: 28px;
+            color: #333;
+        }
+        .project-description {
+            font-size: 16px;
+            color: #666;
+        }
+        .landing {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+        }
+        .landing .img img {
+            width: 276px;
+            height: 276px;
+            border-radius: 50%;
+        }
+        .me h2 {
+            font-size: 36px;
+            margin: 0;
+        }
+        .about {
+            padding: 20px;
+            background-color: #fff;
+        }
+        .card-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .about {
+            padding: 20px;
+            background-color: #fff;
+        }
+        
+        .card-wrapper {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px; /* Space between the boxes */
+            flex-wrap: wrap; /* Allows wrapping on smaller screens */
+        }
+        
+        .box {
+            flex: 1;
+            min-width: 45%; /* Adjust the minimum width to fit two boxes side-by-side */
+            box-sizing: border-box;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .box1 img, .box2 img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .box {
+                min-width: 100%;
+            }
+        }
+        
+        .box {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            flex: 1;
+            box-sizing: border-box;
+        }
+        .about .card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box {
+    flex: 1;
+    margin: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.box1, .box2 {
+    max-width: 45%; /* Adjust width as needed */
+    display: flex;
+    flex-direction: column;
+}
+
+.box1 img, .box2 img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .box1, .box2 {
+        max-width: 100%;
+    }
+}
+
+        .box1 {
+            max-width: 45%;
+        }
+        .box2 {
+            max-width: 45%;
+        }
+        .box2 .mainlist {
+            list-style-type: none;
+            padding: 0;
+        }
+        .box2 .sublist {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .box2 .icon {
+            margin-right: 10px;
+        }
+        .social-links ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .social-links ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #f53f2b;
+            color: #fff;
+        }
+        .ContactColour a {
+            color: #f53f2b;
+            text-decoration: none;
+        }
+        .ContactColour a:hover {
+            color: #f53f2b;
+        }
+        @media (max-width: 768px) {
+            .box1, .box2 {
+                max-width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
     <!--Landing div-->
     <div class="landing">
-        <div class="img animate__animated animate__slideInDown wow" data-wow-duration="1.5s" data-wow-delay="0.3s"><img src="assets/img/arham.png" alt="name photo" width="2768" height="2768"></div>
+        <div class="img animate__animated animate__slideInDown wow" data-wow-duration="1.5s" data-wow-delay="0.3s"><img src="assets/img/arham.png" alt="name photo"></div>
         <div class="me animate__animated animate__slideInUp wow" data-wow-duration="1.5s" data-wow-delay="0.3s">
             <section class="shortme">
                 <h2>MOHAMMAD ARHAM</h2>
@@ -29,67 +210,63 @@
     <div class="about">
         <div class="title">PORTFOLIO</div>
         <div class="card-wrapper">
-            <div class="box box1 animate__animated animate__slideInLeft wow" data-wow-duration="1s" data-wow-delay="0s"><span> <b>About Me</b></span>
-                <img src="assets/img/arham.png" alt="" width="2768" height="2768">
-                <p>Hey I am Mohammad Arham from Delhi, India.<br>I am currently pursuing my B.Tech in Computer Science. <br> I love to design websites and <b style="color: #f53f2b;">UI/UX</b></p>
-<!-- This is used to view host file -->
-            <div class="resume"><button type="submit"  onclick=" window.open('https:\/\/mohdarham.github.io/Arham-Resume/', '_blank')">Resume</button></div>
-          </div>
-            <div class="box box2 animate__animated animate__slideInUp wow" data-wow-duration="1s" data-wow-delay="0.37s"> <span><b>Skills</b></span>
-<br>
-<span> Programming</span>
-<ul class="mainlist">
-  <!--Fontawsome icons here-->
-  <li class="sublist">
-    <div class="icon colorful-icon">
-      <i class="devicon-c-plain-wordmark"></i>
-    </div>
-    <div>C</div>
-  </li>
-  <li class="sublist">
-    <div class="icon colorful-icon">
-      <i class="devicon-cplusplus-plain-wordmark"></i>
-    </div>
-    <div>C++</div>
-  </li>
-  <li class="sublist">
-    <div class="icon colorful-icon">
-      <i class="devicon-python-plain-wordmark"></i>
-    </div>
-    <div>Python</div>
-  </li>
-  <li class="sublist">
-    <div class="icon colorful-icon">
-      <i class="devicon-java-plain-wordmark"></i>
-    </div>
-    <div>Java</div>
-  </li>
-</ul>
-
-</ul>
-<span style="width: 100%; text-align: center;">Web Technologies</span>
-<ul class="mainlist">
-  <!--USE ICONS FROM ICONS8 OF SIZE 48PX FOR BEST APPEARANCE -->
-  <li class="sublist">
-    <div class="icon">
-      <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML" />
-    </div>
-    <div>HTML</div>
-  </li>
-  <li class="sublist">
-    <div class="icon">
-      <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS" />
-    </div>
-    <div>CSS</div>
-  </li>
-  <li class="sublist">
-    <div class="icon">
-      <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript" />
-    </div>
-    <div>JavaScript</div>
-  </li>
-</ul>
-
+            <div class="box box1 animate__animated animate__slideInLeft wow" data-wow-duration="1s" data-wow-delay="0s">
+                <span> <b>About Me</b></span>
+                <img src="assets/img/arham.png" alt="About Me">
+                <p>Hey I am Mohammad Arham from Delhi, India.<br>I am currently pursuing my B.Tech in Computer Science. <br></p>
+                <!-- This is used to view host file -->
+                <div class="resume"><button type="submit" onclick="window.open('https://mohdarham.github.io/Arham-Resume/', '_blank')">Resume</button></div>
+            </div>
+            <div class="box box2 animate__animated animate__slideInUp wow" data-wow-duration="1s" data-wow-delay="0.37s"> 
+                <br>
+                <span> Programming</span>
+                <ul class="mainlist">
+                    <li class="sublist">
+                        <div class="icon colorful-icon">
+                            <i class="devicon-c-plain-wordmark"></i>
+                        </div>
+                        <div>C</div>
+                    </li>
+                    <li class="sublist">
+                        <div class="icon colorful-icon">
+                            <i class="devicon-cplusplus-plain-wordmark"></i>
+                        </div>
+                        <div>C++</div>
+                    </li>
+                    <li class="sublist">
+                        <div class="icon colorful-icon">
+                            <i class="devicon-python-plain-wordmark"></i>
+                        </div>
+                        <div>Python</div>
+                    </li>
+                    <li class="sublist">
+                        <div class="icon colorful-icon">
+                            <i class="devicon-java-plain-wordmark"></i>
+                        </div>
+                        <div>Java</div>
+                    </li>
+                </ul>
+                <span style="width: 100%; text-align: center;">Web Technologies</span>
+                <ul class="mainlist">
+                    <li class="sublist">
+                        <div class="icon">
+                            <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML" />
+                        </div>
+                        <div>HTML</div>
+                    </li>
+                    <li class="sublist">
+                        <div class="icon">
+                            <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS" />
+                        </div>
+                        <div>CSS</div>
+                    </li>
+                    <li class="sublist">
+                        <div class="icon">
+                            <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript" />
+                        </div>
+                        <div>JavaScript</div>
+                    </li>
+                </ul>
                 <span>Tools</span>
                 <ul class="mainlist">
                     <ul class="sublist">
@@ -104,94 +281,105 @@
                         <li class="icon"><img src="https://img.icons8.com/carbon-copy/32/000000/visual-studio-code-2019.png" alt="vscode" /></li>
                         <li>VS Code</li>
                     </ul>
-                
                 </ul>
             </div>
-             <div class="container">
-                <div class="social-links">
-                    <ul>
-                        <li ><a href="https://github.com/MohdArham" target="_blank"><i class="fab fa-github iconn"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/mohd-arham-4ab292248" target="_blank"><i class="fab fa-linkedin-in  iconn"></i></a></li>
-                        <li><a href="mailto:mohdarham94@gmail.com" target="_blank"><i class="fab fa-google iconn"></i></a></li>
-                        <li><a href="https://www.instagram.com/ar.ham_5/?igshid=ZDc4ODBmNjlmNQ%3D%3D" target="_blank"><i class="fab fa-instagram  iconn "></i></a></li>
-                    </ul>
-                </div>
-                <div class="footer">Made with ❤️ by <a href="https://github.com/MohdArham">Mohammad Arham</a></div>
-<!-- Contact Button code and inline -->
-                <li class="ContactColour"><a href="contact.html">Contact</a></li>
-                <style>
-                 .ContactColour a {
-                    color: #f53f2b;
-                    text-decoration: none;
-                  }
-                
-                  .ContactColour a :hover {
-                    color: #f53f2b;
-                  }
-                </style>
-</div> 
-</div>   
         </div>
-        <footer class="footer">
-          <section>
-             <div class="credit">&copy; copyright @ 2023 Jamia Hamdard | @All Rights Reserved ! <span> Mohd Arham</span></div>
-          </section>
-       </footer>
-        <!--TypedJs -->
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-        <script>
-            //Enter your specilizations here
-            var typed = new Typed("#typed", {
-                strings: ['Programmer', 'Engineer', 'Gamer ', 'Designer'],
-                typeSpeed: 50,
-                smartBackspace: true,
-                backSpeed: 35,
-                loop: true,
-                showCursor: false,
-            });
-        </script>
-        <!--Wow js is for aniamtion on scroll-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous"></script>
-        <script>
-            new WOW().init();
-        </script>
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i]; 
- 					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="projects">
+        <h1 style="font-size: 36px; color: #f53f2b; text-align: center; margin-bottom: 20px;">My Projects</h1>
+
+        <!-- Project 1 -->
+        <div class="project-card">
+            <h2 class="project-title">Quadtree Visualizer</h2>
+            <p class="project-description">Developed a versatile quadtree library for efficient data visualization. Features include interactive visualization and collision detection, using C/C++, CMake, and React. Applications include GIS, game development, and data analysis.</p>
+            <!-- <img src="assets/img/quadtree-visualizer.jpg" alt="Quadtree Visualizer" class="project-image"> -->
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <h2 class="project-title">Student Information Chatbot System</h2>
+            <p class="project-description">Created a chatbot for answering student and college-related queries, improving response times and reducing administrative workload. Utilized AI, natural language processing, and web technologies for implementation.</p>
+            <!-- <img src="assets/img/chatbot-system.jpg" alt="Student Information Chatbot System" class="project-image"> -->
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <h2 class="project-title">Student Helpdesk System (Web-Based)</h2>
+            <p class="project-description">Developed a system enabling students to request academic, technical, and administrative support from their educational institution.</p>
+            <!-- <img src="assets/img/helpdesk-system.jpg" alt="Student Helpdesk System" class="project-image"> -->
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+            <h2 class="project-title">Number Plate Recognition System using MATLAB</h2>
+            <p class="project-description">Created a system utilizing image processing techniques and pattern recognition algorithms to detect and extract license plate information from images.</p>
+            <!-- <img src="assets/img/number-plate-recognition.jpg" alt="Number Plate Recognition System" class="project-image"> -->
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card">
+            <h2 class="project-title">Portfolio Website</h2>
+            <p class="project-description">Designed and developed a responsive portfolio website with rich animations, full-screen mode, and a modern aesthetic UI.</p>
+            <!-- <img src="assets/img/portfolio-website.jpg" alt="Portfolio Website" class="project-image"> -->
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card">
+            <h2 class="project-title">E-commerce Website</h2>
+            <p class="project-description">Built an e-commerce website allowing users to browse products, add items to the cart, and complete the purchase process.</p>
+            <!-- <img src="assets/img/ecommerce-website.jpg" alt="E-commerce Website" class="project-image"> -->
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="social-links">
+            <ul>
+                <li><a href="https://github.com/MohdArham" target="_blank"><i class="fab fa-github iconn"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/mohd-arham-4ab292248" target="_blank"><i class="fab fa-linkedin-in iconn"></i></a></li>
+                <li><a href="mailto:mohdarham94@gmail.com" target="_blank"><i class="fab fa-google iconn"></i></a></li>
+                <li><a href="https://www.instagram.com/ar.ham_5/?igshid=ZDc4ODBmNjlmNQ%3D%3D" target="_blank"><i class="fab fa-instagram iconn"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer">Made with ❤️ by <a href="https://github.com/MohdArham">Mohammad Arham</a></div>
+        <!-- Contact Button code and inline -->
+        <li class="ContactColour"><a href="contact.html">Contact</a></li>
+        <style>
+            .ContactColour a {
+                color: #f53f2b;
+                text-decoration: none;
+            }
+            .ContactColour a:hover {
+                color: #f53f2b;
+            }
+        </style>
+    </div> 
+
+    <!-- Footer -->
+    <footer class="footer">
+        <section>
+            <div class="credit">&copy; copyright @ 2024 Mohammad Arham | All Rights Reserved!</div>
+        </section>
+    </footer>
+
+    <!-- TypedJs -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+        var typed = new Typed("#typed", {
+            strings: ['Programmer', 'Engineer', 'Gamer ', 'Designer'],
+            typeSpeed: 50,
+            smartBackspace: true,
+            backSpeed: 35,
+            loop: true,
+            showCursor: false,
+        });
+    </script>
+
+    <!-- Wow js is for animation on scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>
