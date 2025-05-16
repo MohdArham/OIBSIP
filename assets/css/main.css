@@ -31,7 +31,7 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: #f53f2b;
+  background: #4CAF50;
   color: white;
   outline: none;
   border: none;
@@ -46,8 +46,9 @@ body {
   background-image: url('../img/white_bg.jpg');
   width: 99vw;
   max-width: 100% !important;
-  cursor: url("https://cdn.custom-cursor.com/db/6102/32/color-lush-lava-cursor.png"),
-    auto;
+  /* commented for orange cursor */
+  /* cursor: url("https://cdn.custom-cursor.com/db/6102/32/color-lush-lava-cursor.png"),
+    auto; */
   overflow-x: hidden;
 }
 
@@ -64,7 +65,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #f53f2b;
+  background: #4CAF50;
   border-radius: 3px;
 }
 
@@ -139,9 +140,9 @@ body {
   }
   50% {
     border-radius: 40%;
-    -webkit-box-shadow: 10px 10px 25px #f53f2b63,
+    -webkit-box-shadow: 10px 10px 25px #4CAF5063,
       inset -10px -10px 4px #00000010;
-    box-shadow: 10px 10px 25px #f53f2b63, inset -10px -10px 4px #00000010;
+    box-shadow: 10px 10px 25px #4CAF5063, inset -10px -10px 4px #00000010;
   }
   80% {
     border-radius: 30%;
@@ -161,9 +162,9 @@ body {
   }
   50% {
     border-radius: 40%;
-    -webkit-box-shadow: 10px 10px 25px #f53f2b63,
+    -webkit-box-shadow: 10px 10px 25px #4CAF5063,
       inset -10px -10px 4px #00000010;
-    box-shadow: 10px 10px 25px #f53f2b63, inset -10px -10px 4px #00000010;
+    box-shadow: 10px 10px 25px #4CAF5063, inset -10px -10px 4px #00000010;
   }
   80% {
     border-radius: 30%;
@@ -204,7 +205,7 @@ body {
 #typed {
   padding-top: 0.5em;
   height: 2em;
-  color: #f53f2b;
+  color: #4CAF50;
 }
 
 .about {
@@ -295,7 +296,7 @@ body {
   outline: none;
   cursor: pointer;
   border: none;
-  background: #f53f2b;
+  background: #4CAF50;
   color: #fcfcfc;
   -webkit-box-shadow: -0.15625vw -0.15625vw 0.65625vw #ffffff,
     0.15625vw 0.15625vw 0.19625vw #00000062;
@@ -422,7 +423,7 @@ body {
 }
 
 .about .card-wrapper .box3 ul li a:hover {
-  color: #f53f2b;
+  color: #4CAF50;
 }
 
 .about-icons a {
@@ -485,9 +486,9 @@ body {
 }
 
 .fab:hover {
-  color: #f53f2b;
+  color: #4CAF50;
   background-color: transparent;
-  border: 2px solid #f53f2b;
+  border: 2px solid #4CAF50;
   transform: rotate(360deg) scale(1.2);
   border-radius: 50px;
   background: #e0e0e0;
@@ -496,7 +497,7 @@ body {
 .fab {
   width: 50px;
   height: 50px;
-  background-color: #f53f2b;
+  background-color: #4CAF50;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -573,7 +574,7 @@ footer .person1 {
 .back_to_top {
   width: 50px;
   height: 50px;
-  background-color: #f53f2b;
+  background-color: #4CAF50;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -660,7 +661,7 @@ footer .person1 {
 }
 
   .colorful-icon i.devicon-c-plain-wordmark {
-    color: #f53f2b; /* Change this color to your desired color for C */
+    color: #4CAF50; /* Change this color to your desired color for C */
   }
 
   .colorful-icon i.devicon-cplusplus-plain-wordmark {
@@ -728,10 +729,10 @@ footer .person1 {
   }
   
   .ContactColour a {
-    color: #f53f2b;
+    color: #4CAF50;
     text-decoration: none;
   }
   
   .ContactColour a:hover {
-    color: #f53f2b;
+    color: #4CAF50;
   }
