@@ -989,3 +989,13 @@ footer .person1 {
     max-width: 100%;
   }
 }
+
+.ContactColour a {
+              color: #4CAF50;
+              text-decoration: none;
+          }
+
+          .ContactColour a:hover {
+              color: #0c0c0c;
+          }
+
