@@ -1,86 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f2f2f2;
-}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
 
-* {
-  box-sizing: border-box;
-}
+    .container {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 20px;
+      background-color: #fff;
+      /* changed */
+      padding: 30px;
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
+        -10px -10px 20px rgba(255, 255, 255, 0.5);
+    }
 
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: none;
-  background-color: #f2f2f2;
-  border-radius: 10px;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2),
-              -4px -4px 8px rgba(255, 255, 255, 0.5);
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
+    h3 {
+      color: #f53f2b;
+      /* red accent */
+      text-align: center;
+      margin-bottom: 20px;
+    }
 
-input[type=submit] {
-  background-color: #f53f2b;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2),
-              -4px -4px 8px rgba(255, 255, 255, 0.5);
-}
+    label {
+      font-weight: bold;
+      margin-bottom: 6px;
+      display: block;
+    }
 
-input[type=submit]:hover {
-  background-color: #d92a14;
-}
+    * {
+      box-sizing: border-box;
+    }
 
-.container {
-  border-radius: 30px;
-  background-color: #f53f2b57;
-  padding: 20px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
-              -10px -10px 20px rgba(255, 255, 255, 0.5);
-}
+    input[type=text],
+    input[type=email],
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2),
+        -4px -4px 8px rgba(255, 255, 255, 0.5);
+      margin-bottom: 18px;
+      resize: vertical;
+      font-size: 14px;
+    }
 
-h3 {
-  color: #f53f2b;
-  text-align: center;
-}
+    textarea {
+      height: 150px;
+    }
 
-</style>
+    input[type=submit] {
+      width: 100%;
+      background-color: #4CAF50;
+      /* green */
+      color: white;
+      padding: 14px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2),
+        -4px -4px 8px rgba(255, 255, 255, 0.5);
+      transition: background 0.3s ease;
+    }
+
+    input[type=submit]:hover {
+      background-color: #f53f2b;
+      /* red on hover */
+    }
+
+    /* Success popup */
+    #success-popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #4CAF50;
+      color: #fff;
+      padding: 20px 40px;
+      border-radius: 10px;
+      font-size: 18px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      z-index: 9999;
+      animation: fadeInOut 2.5s ease;
+    }
+
+    @keyframes fadeInOut {
+      0% {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+      }
+
+      20% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+      }
+
+      80% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+        transform: translate(-50%, -40%);
+      }
+    }
+  </style>
 </head>
+
 <body>
-<h3>Contact Form</h3>
-<div class="container">
-  <form action="/action_page.php">
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="india">India</option>
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-      <option value="france">France</option>
-      <option value="germany">Germany</option>
-      <option value="japan">Japan</option>
-      <option value="mexico">Mexico</option>
-      <option value="spain">Spain</option>
-      <!-- Add more options for other countries as needed -->
-    </select>
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-    <input type="submit" value="Submit">
-  </form>
-</div>
-<script src="/assets/js/ContactForm.js"></script>
+  <div class="container">
+    <h3>CONTACT FORM</h3>
+    <form id="contact-form">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Enter your first name" required>
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Enter your last name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="subject">Query</label>
+      <textarea id="subject" name="subject" placeholder="Write your query..." required></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <!-- Success popup -->
+  <div id="success-popup">Submitted Successfully!</div>
+
+  <script src="assets/js/contact.js"></script>
 </body>
+
 </html>
