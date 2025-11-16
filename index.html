@@ -35,11 +35,9 @@
             <div class="box box1 animate__animated animate__slideInLeft wow" data-wow-duration="1s" data-wow-delay="0s">
                 <span> <b>ABOUT ME</b></span>
                 <!-- <img src="assets/img/arham.png" alt="About Me"> -->
-                <p>I'm a Software Developer with experience in backend development and ERP systems. I specialize in
-                    Python, Flask, and PostgreSQL. At Binary Semantics, I have worked on real-time API integrations,
-                    automated database dump processes, and optimized storage—leading to a 60% reduction in database
-                    size. I’m passionate about solving complex problems, building scalable systems, and continuously
-                    improving application performance and user experience. <br></p>
+                <p>I am a Python Backend Developer specializing in building scalable backend systems, ERP integrations, data pipelines and analytics dashboards. With hands-on experience in Odoo, Flask, PostgreSQL, and data pipelines, I have worked on real-world projects involving API development, module customization, and process automation.Also, architecting an ETL pipeline from PostgreSQL to Amazon Redshift using Apache Airflow.
+<br><br>
+I focus on writing clean, maintainable code and solving practical business problems through backend engineering.</p>
                 <!-- This is used to view host file -->
                 <div class="resume">
                     <button type="button" onclick="window.open('https://mohdarham.github.io/Arham-Resume/', '_blank')">
@@ -116,6 +114,13 @@
                         </div>
                         <div>JavaScript</div>
                     </li>
+                    <li class="sublist">
+                        <div class="icon colorful-icon">
+                            <i class="devicon-flask-original"></i>
+                        </div>
+                        <div>Flask</div>
+                    </li>
+
                 </ul>
                 <span>TOOLS</span>
                 <ul class="mainlist">
@@ -135,6 +140,40 @@
                         <li>VS Code</li>
                     </ul>
                 </ul>
+<span style="width: 100%; text-align: center;">DATABASE & CLOUD</span>
+<ul class="mainlist">
+    <li class="sublist">
+        <div class="icon colorful-icon">
+            <i class="devicon-postgresql-plain-wordmark"></i>
+        </div>
+        <div>PostgreSQL</div>
+    </li>
+    <li class="sublist">
+        <div class="icon colorful-icon">
+            <i class="devicon-amazonwebservices-plain-wordmark"></i>
+        </div>
+        <div>AWS</div>
+    </li>
+    <!-- <li class="sublist">
+        <div class="icon colorful-icon">
+            <i class="devicon-redshift-plain-wordmark"></i>
+        </div>
+        <div>Redshift</div>
+    </li> -->
+    <li class="sublist">
+        <div class="icon colorful-icon">
+            <i class="devicon-apache-plain-wordmark"></i>
+        </div>
+        <div>Airflow</div>
+    </li>
+    <!-- <li class="sublist">
+        <div class="icon colorful-icon">
+            <i class="devicon-jenkins-plain"></i>
+        </div>
+        <div>Jenkins</div>
+    </li> -->
+</ul>
+
             </div>
         </div>
     </div>
@@ -147,12 +186,14 @@
             <h2 class="project-title">Associate Software Developer – Binary Semantics Ltd.</h2>
             <p class="experience-duration">Aug 2024 – Present · Gurugram, Haryana, India (On-site)</p>
             <p class="project-description">
-                • Customizing Odoo ERP with Python<br>
-                • Managing PostgreSQL databases and queries<br>
-                • Utilizing Linux for a robust development environment<br>
-                • Optimized database queries (PostgreSQL, MySQL) to improve performance by up to 40%<br>
-                • Collaborated with frontend teams to integrate APIs into web and mobile apps<br>
-                • Built a <b>Serverless Report Generator</b> using AWS Lambda + Python, delivered via API Gateway<br>
+                • Migrated file storage to AWS S3, reducing database size by 60% and enhancing performance.<br>
+                • Developed a full-stack analytics dashboard using Flask, Python, PostgreSQL, and custom API controllers with role-based access.<br>
+                • Developed real-time FASTag vehicle tracking with Google Maps API in the logistics module.<br>
+                • Integrated an AI-powered Rasa chatbot to automate dashboard-based user interactions.<br>
+                • Architected a config-driven, incremental ETL pipeline (using Python & Airflow) to replicate Odoo (PostgreSQL) data to Amazon Redshift.<br>
+                • Configured web servers, hosted APIs, and managed subdomains on Ubuntu Linux (AWS EC2).<br>
+                • Integrated external APIs (ULIP, PAN, DL) for real-time data validation.<br>
+                • Automated database dump pipelines using Apache Airflow.
             </p>
         </div>
 
@@ -181,6 +222,27 @@
     <!-- Projects Section -->
     <div class="projects">
         <h1 style="font-size: 36px; color: #000000; text-align: center; margin-bottom: 20px;">PROJECTS</h1>
+
+
+        <div class="project-card">
+    <h2 class="project-title">Odoo Custom Module Development</h2>
+    <p class="project-description">Customized purchase, sales, and HR modules; built custom APIs for mobile applications.</p>
+</div>
+
+<div class="project-card">
+    <h2 class="project-title">Flask-based Analytics Dashboard Backend</h2>
+    <p class="project-description">Built REST APIs for charts, metrics, and real-time dashboards using PostgreSQL.</p>
+</div>
+
+<div class="project-card">
+    <h2 class="project-title">PostgreSQL → Redshift ETL Pipeline</h2>
+    <p class="project-description">Worked on a chunk-based, memory-efficient ETL migration pipeline.</p>
+</div>
+
+<div class="project-card">
+    <h2 class="project-title">Flask JWT Task Manager</h2>
+    <p class="project-description">Developed a secure REST API for a Task Manager application using Flask and Flask-RESTful. Implemented user authentication and authorization using JSON Web Tokens (JWT) to secure endpoints for creating, retrieving, updating, and deleting tasks.</p>
+</div>
 
         <!-- Project 1 -->
         <div class="project-card">
@@ -308,12 +370,14 @@
         var typed = new Typed("#typed", {
             // strings: ['Software Developer', 'Engineer', 'Gamer ', 'Designer'],
             strings: [
-                'Python / Flask Developer',
+                'Python Backend Developer',
+                'Flask / FastAPI Developer',
+                'ETL & Data Pipeline Engineer',
                 'NodeJs Developer',
-                'Backend Engineer',
                 'API Developer',
-                'AWS Practitioner',
-                'PostgreSQL Expert'
+                'AWS Cloud Developer',
+                'PostgreSQL & Redshift Expert',
+                'Odoo / ERP Specialist'
             ],
             typeSpeed: 30,
             smartBackspace: true,
