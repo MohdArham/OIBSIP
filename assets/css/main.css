@@ -991,11 +991,10 @@ footer .person1 {
 }
 
 .ContactColour a {
-              color: #4CAF50;
-              text-decoration: none;
-          }
+  color: #4CAF50;
+  text-decoration: none;
+}
 
-          .ContactColour a:hover {
-              color: #0c0c0c;
-          }
-
+.ContactColour a:hover {
+  color: #0c0c0c;
+}
