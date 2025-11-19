@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const contactForm = document.querySelector("#contact-form");
   const popup = document.getElementById("success-popup");
+  const loader = document.getElementById("loading-overlay");
 
   contactForm.addEventListener("submit", async function (event) {
     event.preventDefault();
@@ -18,6 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     try {
+      loader.style.display = "flex";
+
       const formData = new FormData();
       formData.append("firstname", data.firstname);
       formData.append("lastname", data.lastname);
@@ -30,6 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
         mode: "no-cors",
       });
 
+      loader.style.display = "none";
+
       popup.style.display = "block";
 
       setTimeout(() => {
@@ -39,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       contactForm.reset();
     } catch (error) {
+      loader.style.display = "none";
       alert("Submission failed. Try again.");
       console.error(error);
     }
